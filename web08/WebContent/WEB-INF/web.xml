@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <filter>
+    <filter-name>contentFilter</filter-name>
+    <filter-class>com.lanou.web.ContentFilter</filter-class>
+    <init-param>
+      <param-name>keyWords</param-name>
+      <param-value>卧槽,菜鸟,垃圾,fuck</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>contentFilter</filter-name>
+    <url-pattern>/fatie.do</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>lengthFilter</filter-name>
+    <filter-class>com.lanou.web.LengthFilter</filter-class>
+    <init-param>
+      <param-name>length</param-name>
+      <param-value>10</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>lengthFilter</filter-name>
+    <url-pattern>/fatie.do</url-pattern>
+  </filter-mapping>
+  <listener>
+    <listener-class>com.lanou.web.MyRequestListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.lanou.web.MySessionListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.lanou.web.MyAppListener</listener-class>
+  </listener>
+</web-app>

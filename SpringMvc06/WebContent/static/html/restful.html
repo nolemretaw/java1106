@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button onclick="findAll()">查询所有user对象</button>
+	<button onclick="findUserById()">根据id查找一个user对象</button>
+	<button onclick="deleteUserById()">根据id删除一个user对象</button>
+	<hr/>
+	<form id="addForm">
+		<fieldset>
+			<legend>添加用户</legend>
+			账号:<input type="text" name="username"/><br/>
+			密码:<input type="password" name="password"/><br/>
+			<input type="button" value="添加" onclick="addUser()"/>
+		</fieldset>
+	</form>
+	
+	<hr/>
+	<form id="updateForm">
+		<fieldset>
+			<legend>修改用户</legend>
+			账号:<input type="text" name="username"/><br/>
+			密码:<input type="password" name="password"/><br/>
+			<input type="button" value="修改" onclick="updateUser()"/>
+		</fieldset>
+	</form>
+
+	
+	<script src="../js/jquery-1.4.3.js"></script>
+	<script src="../js/jquery.serializeJson.js"></script>
+	
+	<script type="text/javascript">
+		function findAll(){
+			$.ajax({
+				type:"GET",
+				url:"/SpringMvc06/user/findAll",
+				success:function(data){
+					console.log(data);
+				}
+			});
+		}
+		
+		function findUserById() {
+			$.ajax({
+				type:"GET",
+				url:"/SpringMvc06/user/5",
+				success:function(data){
+					console.log(data);
+				}
+			});
+		}
+		
+		function deleteUserById() {
+			$.ajax({
+				type:"DELETE",
+				url:"/SpringMvc06/user/5",
+				success:function(data){
+					console.log(data);
+				}
+			});
+		}
+		
+		/*添加user*/
+		function addUser() {
+			$.ajax({
+				type:"POST",
+				url:"/SpringMvc06/user/addUser",
+				contentType:"application/json",
+				data:JSON.stringify($("#addForm").serializeJson()),
+				success:function(data){
+					console.log(data);	
+				}
+			});
+		}
+		
+		/*修改user*/
+		function updateUser() {
+			$.ajax({
+				type:"PUT",
+				url:"/SpringMvc06/user/updateUser",
+				contentType:"application/json",
+				data:JSON.stringify($("#updateForm").serializeJson()),
+				success:function(data){
+					console.log(data);	
+				}
+			});
+		}
+	</script>
+</body>
+	
+</html>

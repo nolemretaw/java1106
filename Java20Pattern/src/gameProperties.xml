@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<properties>
+	<weapon id="1">
+		<name>柳叶刀</name>
+		<hurt>100</hurt>
+	</weapon>
+	<weapon id="2">
+		<name>龙泉剑</name>
+		<hurt>150</hurt>
+	</weapon>
+	<weapon id="3">
+		<name>狼牙棒</name>
+		<hurt>200</hurt>
+	</weapon>
+</properties>

@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "GBK"?>
+<food>
+	<fruit id="1">
+		<name>нВ╧о</name>
+		<taste>лП</taste>
+		<price>10</price>
+		<color>блф╓╨Лхю</color>
+		<shape>мжт╡</shape>
+	</fruit>
+	<fruit id="2">
+		<name>фоля</name>
+		<taste>кАлП</taste>
+		<price>8</price>
+		<color>вои╚</color>
+		<shape>т╡</shape>
+	</fruit>
+	<fruit id="3">
+		<name>Ёхвс</name>
+		<taste>кА</taste>
+		<price>6</price>
+		<color>Ёхи╚</color>
+	</fruit>
+</food>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+  <generatorConfiguration>
+  	<classPathEntry 
+  		location="C:/Users/xalo/Desktop/java1106/Generator/WebContent/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar"/>
+  	<context id="MySQLTables" targetRuntime="Mybatis3">
+  		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+      		connectionURL="jdbc:mysql://localhost:3306/mybatis"
+        	userId="root"
+        	password="1234">
+    	</jdbcConnection>
+  		<!-- 指定对BigDecimal是否特殊处理 -->
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+	<!-- 指定实体类生成，位置和名称 -->
+    <javaModelGenerator targetPackage="com.lanou.bean" targetProject=".\src">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+
+	<!-- 指定sql定义文件(XML文件)，位置和名称 -->
+    <sqlMapGenerator targetPackage="com.lanou.dao"  targetProject=".\src">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+
+	<!-- 指定Mapper接口，的位置和名称 -->
+    <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.lanou.dao"  targetProject=".\src">
+      <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+
+	<!-- 指定哪些表生成 -->
+    <table tableName="emp" 
+    	enableCountByExample="false" enableDeleteByExample="false"
+    	enableSelectByExample="false" enableUpdateByExample="false">
+    </table>
+  	</context>
+  </generatorConfiguration>
+

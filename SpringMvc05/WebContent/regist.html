@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+	<form>
+		账号:<input type="text" name="username"/><span></span><br/>
+		密码:<input type="password" name="password"/><br/>
+		<input type="button" value="注册" onclick="login1()"/><br/>
+		<input type="button" value="登录" onclick="login2()"/><br/>
+	</form>
+	<script src="js/jquery-1.4.3.js" ></script>
+	<script src = "js/jquery.serializeJson.js"></script>
+	<script type="text/javascript">
+		//账号输入框失去焦点时，发送Ajax,检测账号是否重复
+		$(":text").blur(function(){
+			
+			$.ajax({
+				type:"POST",
+				url:"checkName.do",
+				data:"username="+$(":text").val(),
+				success:function(data){
+					console.log(data);
+					if (data) {
+						$("span").html("账号已存在");
+						$("span").css("color","red");
+					}else {
+						$("span").html("账号可以使用");
+						$("span").css("color","green");
+					}
+				}
+			});
+		});
+		
+		//注册
+		//向服务器提交请求实体字符串格式数据
+			function login1(){
+				/* var username=$(":text").val();
+				var password=$(":password").val(); */
+				//将表单中数据序列化为username=xxx&password=xx
+				var requestData = $("form").serialize();
+				console.log(requestData);
+				$.ajax({
+					type:"POST",
+					url:"login.do",
+					data:requestData,
+					success:function(data){
+						console.log(data);
+					}
+				});	
+			}
+		
+		//登录
+		//向服务器提交json字符串格式数据
+		function login2(){
+			/* var username=$(":text").val();
+			var password=$(":password").val();
+			var jsonStr = 
+				'{"username":"'+username+'","password":"'+password+'"}'; */
+			//将表单数据直接序列化为json字符串格式
+			var jsonObj = $('form').serializeJson();
+			
+			//1、将表单数据序列化成json对象
+			console.log(jsonObj,typeof jsonObj);
+			
+			//2、将json对象转换成json字符串
+             var jsonStr = JSON.stringify(jsonObj);
+             console.log(jsonStr,typeof jsonStr);
+ 
+			$.ajax({
+				type:"POST",
+				url:"login2.do",
+				contentType:"application/json",
+				data:jsonStr,
+				success:function(data){
+					console.log(data);
+				}
+			});	
+			
+		}
+	</script>
+</html>

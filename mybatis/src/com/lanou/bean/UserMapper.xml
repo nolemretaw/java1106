@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!-- sql映射文件 
+	通过sql语句将sql对象与数据表做数据映射
+	namespace是用于区分其他sql映射文件，多个sql映射文件的namespace必须不同
+-->
+<mapper namespace="userMapper">
+	<!-- 提取多条sql语句中相同的sql片段 -->
+	<sql id="selectAll">
+		select * from user
+	</sql>
+	
+	<sql id="selectNameAndPwd">
+		select username,password from user
+	</sql>
+	<!-- 根据id查找user表中一条记录
+		id:当前sql定义的id，方便在代码中查找
+		parameterType:传入占位符的参数类型
+		resultTpye:sql语句执行完后映射的结果类型
+		#{id}：占位符 id名称与实体类属性一致 -->
+	<select id="findUserById"
+			parameterType="int"
+			resultType="user">
+		<include refid="selectAll"/> where id=#{id}
+	</select>
+	
+	<!-- 查找所有数据,返回多行结果时，写单行类型，
+		myBatis自动封装成集合 -->
+	<select id="findAll" resultType="user">
+		select * from user
+	</select>
+	
+	<!-- 根据名字进行模糊查询 -->
+	<select id="findUserLikeName"
+			parameterType="string"
+			resultType="user">
+		<include refid="selectAll"/> where username like #{username}
+	</select>
+	
+	<!-- 根据账号和密码查询一个user对象 
+			传入参数map-->
+	<!-- <select id="findUserByNameAndPwd" 
+			parameterType="map"
+			resultType="user">
+		<include refid="selectAll"/> where username=#{username}
+		 and password=#{password}
+	</select> -->
+	
+	<!-- 根据账号和密码查询一个user对象
+		占位符参数多个 -->
+	<select id="findUserByNameAndPwd" 
+			parameterType="user"
+			resultType="user">
+		<include refid="selectAll"/> where username=#{username}
+		 and password=#{password}
+	</select>
+	
+	<!-- 根据id只查找某个user账号和密码 -->
+	<select id="findNameAndPwdById"
+			parameterType="int"
+			resultType="map">
+		<include refid="selectNameAndPwd"/> where id=#{id}
+	</select>
+	
+	<!-- 查询所有user账号和密码 -->
+	<select id="findAllNameAndPwd"
+			resultType="map">
+		<include refid="selectNameAndPwd"/>
+	</select>
+	
+	<!-- 查询总记录数 -->
+	<select id="CountAll"
+			resultType="int">
+		select count(*) from user
+	</select>
+	
+	<!-- 分页查询 -->
+	<select id="SeletPage"
+			parameterType="map"
+			resultType="user">
+		<include refid="selectAll"/> limit #{start},#{end}
+	</select>
+	
+	<!-- 查询user表中所有数据，封装成user1对象集合，
+		实体类属性名和表字段名称不一致;
+		解决方法1:给字段取别名，与实体类属性名一致
+	 -->
+	 <!-- <select id="findAllUser1"
+	 	resultType="com.lanou.bean.User1">
+	 	select id as uid,username as name,
+	 	password as pwd,age as uage,gender as sex from user
+	 </select> -->
+	 
+	 <!-- 解决方法2:借助mybstis提供的映射标签
+	 		做实体类属性与表字段之间的映射 -->
+	 <resultMap type="com.lanou.bean.User1" id="user1Bean">
+	 		<!-- 主键映射:
+	 			property:实体类中的属性名
+	 			column:表中字段名
+	 		 -->
+	 	<id property="uid" column="id" />
+	 		<!-- 非主键 -->
+	 	<result property="name" column="username"/>
+	 	<result property="pwd" column="password"/>
+	 	<result property="uage" column="age"/>
+	 	<result property="sex" column="gender"/>
+	 </resultMap>
+	 
+	 <select id="findAllUser1" resultMap="user1Bean">
+	 	<include refid="selectAll"/>
+	 </select>
+	 
+	 <!-- 插入数据 -->
+	 <insert id="addUser">
+	 	insert into user(username,password,age,gender) 
+	 	values(#{username},#{password},#{age},#{gender})
+	 </insert>
+	 
+	 <!-- 删除数据 -->
+	 <delete id="deleteUserById" parameterType="int">
+	 	delete from user where id=#{id}
+	 </delete>
+	 
+	 <!-- 修改一个User对象 -->
+	 <update id="updateUser" parameterType="user">
+	 	update user set username=#{username},
+	 	password=#{password},age=#{age},
+	 	gender=#{gender} where id=#{id}
+	 </update>
+</mapper>

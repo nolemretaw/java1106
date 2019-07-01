@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "GBK"?>
+<library>
+	<book id = "1">
+		<name>¹þ¹þ¹þ</name>
+		<author>À²À²À²</author>
+		<price>50</price>
+		<date>2017-11-11</date>
+	</book>
+	<book id = "2">
+		<name>ºÇºÇºÇ</name>
+		<author>À²À²À²</author>
+		<price>50</price>
+		<date>2017-11-11</date>
+	</book>		
+</library>

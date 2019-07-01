@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <!-- 动态sql语句 -->
+<mapper namespace="emp">
+
+	<sql id="selectAll">
+		select * from emp
+	</sql>
+	
+	<!-- 如果传入了部门编号，就查询该部门下所有的员工信息
+		如果没有传入部门编号，就查询所有员工信息
+		
+		select * from emp [where deptno=#{deptno}]
+	 -->
+	<select id="findEmpByDeptNo"
+			parameterType="emp"
+			resultType="emp">
+		<include refid="selectAll"/>
+		<!-- 判断有没有传入部门编号 -->
+		<if test="deptno!=0">
+			where deptno=#{deptno}
+		</if>
+	</select>
+	
+	<!-- 根据薪水查询
+		1、如果传入了薪水就查询高于薪水的员工信息
+		2、如果没有传入薪水就查询高于6000的
+	 -->
+	 <select id="findEmpBySalary"
+	 		parameterType="emp"
+			resultType="emp">
+	 	<include refid="selectAll"/>
+	 	<if test="salary!=0">
+	 		where salary>#{salary}
+	 	</if>
+	 	<if test="salary==0">
+	 		where salary>6000
+	 	</if>	
+	 </select>
+		
+	 <!-- 根据性别查询
+	 	如果传入了性别，就查询该性别员工
+	 	如果没有传入，就查询所有男性员工
+	  -->
+	  <select id="findEmpBySex"
+	  		parameterType="emp"
+	  		resultType="emp">
+	  	<include refid="selectAll"/>
+	  	where sex=
+	  	<choose>
+	  		<when test="sex!=null">
+	  			#{sex}
+	  		</when>
+	  		<otherwise>
+	  			'男'
+	  		</otherwise>
+	  	</choose>
+	  </select>
+	  
+	  <!-- 根据部门编号和薪水组合查询数据
+	  	1、如果只传入部门编号，就查询该部门下所有员工信息
+	  	2、如果只传入薪水，就查询所有高于此薪水的
+	  	3、如果同时传入，就查询该部门下高于此薪水的员工信息
+	  	4、如果两个都没有传入，就查询所有员工信息 -->
+	<!-- <select id="findByDeptnoAndSalary" parameterType="emp" resultType="emp">
+		<include refid="selectAll"/> where 1=1
+		<if test="deptno!=0">
+			and deptno=#{deptno}
+		</if>
+		<if test="salary!=0">
+			and salary>#{salary}
+		</if>	
+	</select> -->
+	
+	<!-- where标签:
+		1、充当sql语句中一个where关键字
+		2、去掉多余的and、or关键字-->
+	<select id="findByDeptnoAndSalary" parameterType="emp" resultType="emp">
+		<include refid="selectAll"/>
+		<where>	
+		<if test="deptno!=0">
+			and deptno=#{deptno}
+		</if>
+		<if test="salary!=0">
+			and salary>#{salary}
+		</if>	
+		</where>
+	</select>
+	
+	<!-- 传过来几项就修改几项 -->
+	<update id="updateEmp" parameterType="emp">
+		update emp
+		<set>
+			<if test="name!=null">
+			name=#{name},
+			</if>
+			<if test="sex!=null">
+				sex=#{sex},
+			</if>
+			<if test="job!=null">
+				job=#{job},
+			</if>
+			<if test="salary!=0">
+				salary=#{salary},
+			</if>
+			<if test="hiredate!=null">
+				hiredate=#{hiredate},
+			</if>
+			<if test="deptno!=0">
+				deptno=#{deptno}
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+	
+	<!-- 值列表动态查询拼接
+		根据传入的部门编号删除员工(10,20,30)
+		delete from emp where deptno in (10,20,30) -->
+	<delete id="deleteEmpByDeptno" parameterType="java.util.List">
+		delete from emp where deptno in
+		<foreach collection="array"
+				open="("
+				separator=","
+				close=")"
+				item="deptno">
+			#{deptno}
+		</foreach>
+	</delete>
+</mapper>

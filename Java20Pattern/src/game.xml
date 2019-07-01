@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+	<!--  武器伤害值  -->
+	<knife_hurt>100</knife_hurt>
+	<sword_hurt>200</sword_hurt>
+	<mace_hurt>300</mace_hurt>
+	<!-- 武器类型指令  -->
+	<weapon_type_knife>1</weapon_type_knife>
+	<weapon_type_sword>2</weapon_type_sword>
+	<weapon_type_mace>3</weapon_type_mace>
+	<!-- 角色类型指令  --> 
+	<role_type_soldier>A</role_type_soldier>
+	<role_type_magicer>B</role_type_magicer>
+</game>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<!-- 查询所有数据的servlet -->
+	<servlet>
+		<servlet-name>empInf</servlet-name>
+		<servlet-class>com.lanou.web.ListEmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>empInf</servlet-name>
+		<url-pattern>/empInf</url-pattern>
+	</servlet-mapping>
+<!-- 添加员工的servlet -->
+	<servlet>
+		<servlet-name>addEmp</servlet-name>
+		<servlet-class>com.lanou.web.AddEmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addEmp</servlet-name>
+		<url-pattern>/addEmp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deleteEmp</servlet-name>
+		<servlet-class>com.lanou.web.DeleteEmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteEmp</servlet-name>
+		<url-pattern>/deleteEmp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>updateEmp</servlet-name>
+		<servlet-class>com.lanou.web.UpdateEmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateEmp</servlet-name>
+		<url-pattern>/updateEmp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>gotoUpdate</servlet-name>
+		<servlet-class>com.lanou.web.GotoUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>gotoUpdate</servlet-name>
+		<url-pattern>/gotoUpdate</url-pattern>
+	</servlet-mapping>
+	<!-- 错误页面配置 -->
+	<error-page>
+	<!-- 错误的http状态码 -->
+		<error-code>500</error-code>
+		<!-- 发生异常后显示的错误页面 -->
+		<location>/500.html</location>
+	</error-page>
+	
+	<error-page>
+	<!-- 错误的http状态码 -->
+		<error-code>404</error-code>
+		<!-- 发生异常后显示的错误页面 -->
+		<location>/404.html</location>
+	</error-page>
+</web-app>

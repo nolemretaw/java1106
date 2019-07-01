@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+	<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+	<url>jdbc:mysql://localhost:3306/lanou1811</url>
+	<username>root</username>
+	<password>1234</password>
+</database>

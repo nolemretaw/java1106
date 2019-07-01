@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+.successMsg{
+	color:green;
+	font-weight:bold;
+	font-size:15px;
+}
+.errorMsg{
+	color:red;
+	font-weight:bold;
+	font-size:15px;
+}

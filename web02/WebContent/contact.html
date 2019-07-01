@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+	<!--
+		action:表单点击提交按钮后向contact地址发起请求
+		contact是相对路径的写法 
+		绝对路径:
+		http://localhost:8080/web02/contact
+	 -->
+		<form action="contact" method="get">
+			姓名:<input type="text" name="name"/><br/>
+			年龄:<input type="text" name="age"/><br/>
+			联系方式:
+			电话:<input type="checkbox" name="contact" value="tel" />
+			微信:<input type="checkbox" name="contact" value="wechat"/>
+			QQ:<input type="checkbox" name="contact" value="qq"/>
+			<br/>
+			<input type="submit" value="提交"/>
+		</form>
+	</body>
+</html>

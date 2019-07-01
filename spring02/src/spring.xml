@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"  
+	xmlns:jee="http://www.springframework.org/schema/jee" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd"
+		>
+		<!-- 开启组件扫描 -->
+		<context:component-scan base-package="com.lanou.dao"/>
+		<context:component-scan base-package="com.lanou.aspect"/>
+		<context:component-scan base-package="com.lanou.service"/>
+		<context:component-scan base-package="com.lanou.controller"/>
+		
+		
+		<!-- Springjdbc配置 -->
+		<!-- 全局加载配置文件 -->
+		<context:property-placeholder
+			location="classpath:jdbc.properties"
+		/>
+		
+		<!-- 配置dbcp数据库连接组件
+			本质是给BasicDataSource类的属性赋值，
+			设置创建出来的Connection连接是什么样的
+		 -->
+		<bean id="dbcp" class="org.apache.commons.dbcp.BasicDataSource">
+			<!-- 属性名必须根据数据库连接对象中写 -->
+			<property name="driverClassName" value="${jdbc.driver}"></property>
+			<property name="url" value="${jdbc.url}"></property>
+			<property name="username" value="${jdbc.username}"></property>
+			<property name="password" value="${jdbc.password}"></property>
+		</bean>
+		
+		<!-- 配置JdbcTemplate模板对象，操作数据库 -->
+		<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<!-- 配置数据源 -->
+		<property name="dataSource" ref="dbcp"></property>
+		</bean>
+		
+		<!-- 配置Dao层组件 -->
+		<!-- <bean id="empDao" class="com.lanou.dao.Impl.EmpDaoImpl">
+			给jdbcTemplate属性赋值
+			<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		</bean> -->
+		
+		<!-- 配置业务模型层service组件 -->
+		<!-- <bean id="empService" class="com.lanou.service.Impl.EmpServiceImpl">
+			<property name="empDao" ref="empDao"></property>
+		</bean> -->
+		
+		<!-- 配置控制层controller组件 -->
+		<!-- <bean id="empController" class="com.lanou.controller.EmpController">
+			<property name="empService" ref="empService"></property>
+		</bean> -->
+		
+		<!-- AOP的配置 -->
+		<!-- 配置	切面Bean组件 -->
+		<!-- <bean id="empAspect" class="com.lanou.aspect.EmpAspect">
+		</bean>
+		
+		<aop:config>
+			配置切入点
+				expression:切入点表达式
+				id:当前切入点配置id
+			
+			<aop:pointcut expression="execution(* com.lanou.service..*.*(..))" 
+			id="pointCut"/>
+			<aop:aspect ref="empAspect">
+				前置通知 
+					method:切面中定义的方法
+				
+				<aop:before method="beginTx"
+					pointcut-ref="pointCut"/>
+				
+				后置通知
+				<aop:after-returning method="commitTx"
+				pointcut-ref="pointCut"/>
+				
+				异常通知
+					throwing接收目标方法抛出的异常，要求与切面方法中定义异常的参数名称保持一致
+				
+				<aop:after-throwing method="rollBackTx"
+				throwing="e"
+				pointcut-ref="pointCut"/>
+				
+				最终通知
+				<aop:after method="close"
+				pointcut-ref="pointCut"
+				/>
+				
+				环绕通知
+				<aop:around method="around"
+				pointcut-ref="pointCut"
+				/>
+			</aop:aspect>
+		</aop:config> -->
+		
+		<!-- aop的注解扫描 -->
+		<aop:aspectj-autoproxy/>
+</beans>
+
+
+
+
+
+
+
+

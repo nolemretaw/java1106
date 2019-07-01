@@ -1,0 +1,21 @@
+{
+	"message":200,
+	"status":"数据正常返回",
+	"data":[
+		{
+			"brand":"iPhoneX",
+			"price":"7388",
+			"color":"中国红"
+		},
+		{
+			"brand":"1加6",
+			"price":"3599",
+			"color":"骚粉"
+		},
+		{
+			"brand":"锤子",
+			"price":"8488",
+			"color":"黑"
+		}
+	]
+}

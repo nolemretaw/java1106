@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+									<table>
+											<tr th:each="emp:${emps}">
+											    <td><input name="ids" value="1" type="checkbox"/></td>
+												<td th:text="${emp.id}"></td>
+												<td th:text="${emp.username}"></td>
+												<td th:text="${emp.name}">
+													<a href="#">admin</a>
+												</td>
+												<td  th:text="${emp.gender}"><span class="am-badge am-badge-secondary">男</span></td>
+												<td th:text="${emp.section}"></td>
+												<td th:text="${emp.email}"></td>
+												</tr>
+
+										</table>
+
+</body>
+</html>

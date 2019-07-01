@@ -1,0 +1,13 @@
+
+table{
+	margin:0 auto;
+	border:1px solid black ;
+	border-spacing:0;
+	font-family:"华康少女文字W5(P)";
+}
+table td{
+	width:100px;
+	text-align:center;
+	font-size:20px;
+	border:1px solid black ;
+}

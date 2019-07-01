@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<!-- 注册失去焦点事件 -->
+		账号:<input type="text" name="username"
+		 id="username"/>
+		<span></span>
+		<br/>
+		密码:<input type="password" name="password"><br/>
+		<input type="button" value="注册"/>
+		<span>
+			
+		</span>
+	</form>
+	
+	<script src="js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+	/*给账号输入框注册失去焦点事件 
+		发送Ajax请求
+	*/
+		$(":text").blur(function() {
+			$.ajax({
+				type:"GET",//请求方式
+				url:"checkName.do",//请求路径
+				data:"username="+$(this).val(),//data:请求参数
+				success:function(data){//响应成功会回调，返回data
+					console.log(data);
+					if (data==1) {
+						$("span:first").html("<b>该账号已注册</b>");
+						$("span:first").css("color","red");
+					} else if (data==2) {
+						$("span:first").html("<b>该账号可以使用</b>");
+						$("span:first").css("color","green");
+					}
+				}
+			});
+		});
+		
+		//Ajax提交整个注册表单
+		$(":button").click(function(){
+			//将表单中所有项数据序列化
+			var formData = $("form").serialize();
+			console.log(formData);
+			$.ajax({
+				type:"POST",
+				url:"registUser.do",
+				data:formData,
+				success:function(data){
+					console.log(data.trim());
+					data = data.trim();
+					if (data=="ok") {//注册成功
+						//替换当前页面
+						//1、修改当前页面的url地址，
+						//2、浏览器就会自动向服务器指定地址发起请求
+						//3、服务器将数据返回给浏览器
+						//4、浏览器解析html内容，显示页面
+						//window.location.replace("list.do");
+						//window.location="list.do";
+						window.location.assign("list.do");
+					}else if (data=="error") {//失败
+						$("span:eq(1)").html("<b>注册失败</b>");
+						$("span:eq(1)").css("color","red");
+					}
+				}
+			});
+		});
+	</script>
+</body>
+</html>

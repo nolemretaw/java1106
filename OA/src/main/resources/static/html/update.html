@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" href="../css/amazeui.min.css">
+		<link rel="stylesheet" href="../css/admin.css">
+		<link rel="stylesheet" href="../css/app.css">
+		<style>
+			.admin-main {
+				padding-top: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="am-cf admin-main">
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="am-g">
+						<form id="updateForm" class="am-form am-form-horizontal" action="role/addroleSubmit.action" method="post" style="padding-top: 30px;">
+							<input value="504" name="roleId" type="hidden">
+							<input type="hidden" name="id"/><br>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+								用户名:
+								</label>
+								<div class="am-u-sm-9">
+									<input id="roleName" required="" value="" name="username" type="text">
+									<small id="helpRole"></small>
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+								姓名:
+								</label>
+								<div class="am-u-sm-9">
+									<input id="roleName" required="" value="" name="name" type="text">
+									<small id="helpRole"></small>
+								</div>
+							</div>
+							
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+								邮箱:
+								</label>
+								<div class="am-u-sm-9">
+									<input id="roleName" required=""  value="" name="email" type="text">
+									<small id="helpRole"></small>
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+										性别:
+									</label>
+								<div class="am-u-sm-9" style="line-height: 30px;">
+									<input type="radio" id="man" name="gender" />
+									<label for="man">
+											男
+										</label> &nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="radio" id="woman" name="gender" />
+									<label for="woman">
+											女
+										</label>
+									<br />
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<label for="user-email" class="am-u-sm-3 am-form-label">
+										部门:
+									</label>
+								<div class="am-u-sm-9">
+									<select name="departid" required>
+										<option value="1">
+											开发部
+										</option>
+										<option value="2">
+											研发部
+										</option>
+										<option value="3">
+											保安部
+										</option>
+										<option value="4">
+											清洁部
+										</option>
+
+									</select>
+								</div>
+							</div>
+							<div class="am-form-group">
+								<div class="am-u-sm-9 am-u-sm-push-3">
+									<input id="addRole" class="am-btn am-btn-success" value="提交修改" type="button">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			<script src="../js/jquery-1.4.3.js"></script>
+			<script src="../js/jquery.serializeJson-min.js"></script>
+			<script type="text/javascript">
+			$(document).ready(function(){
+		var storage=window.localStorage;
+		var id = storage.getItem("id");
+		console.log(id,typeof id)
+		$.ajax({
+			type:"GET",
+			url:"/oa_emp/"+id,
+			success:function(data){
+				$("input[name='id']").val(data.id);
+				$("input[username='username']").val(data.username);
+				$("input[name='name']").val(data.name);
+				$("input[gender='gender']").val(data.gender);
+				$("input[email='gender']").val(data.email);
+				$("input[section='section']").val(data.section);
+			}
+		});
+	});
+			
+			$(":button").click(function() {
+				$.ajax({
+					type:"PUT",
+					url:"/oa_emp/updateEmp",
+					contentType:"application/json",
+					data:JSON.stringify($("#updateForm").serializeJson()),
+					success:function(data){
+						
+					 window.location.assign("/oa_emp/findAllEmp");
+					}
+				});
+			});
+			</script>
+	</body>
+
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <!-- 
+	一对一的关联映射查询
+-->
+<mapper namespace="com.lanou.dao.CoachMapper">
+	<!-- 主要查询team，以及他所关联的coach对象 -->
+	<resultMap type="com.lanou.bean.Coach" id="coachBean">
+		<!-- coach实体类属性与coach表的字段映射 -->
+		<id property="cid" column="cid"/>
+		<result property="cname" column="cname"/>
+		<!-- 对方表与对方实体类的映射关系
+			property:当前实体类中用于描述对方实体类的属性名
+			javaType:对方实体类的全限定名
+			 -->
+		<association property="team" javaType="com.lanou.bean.Team">
+			<!-- 对方实体类属性与对方表字段之间映射关系 -->
+			<id property="tid" column="tid"/>
+			<result property="tname" column="tname"/>
+			<result property="location" column="location"/>
+		</association>
+	</resultMap>
+	
+	<!-- 根据cid查询coach对象，以及他所关联的team对象 -->
+	<select id="findCoachById" parameterType="int"
+			resultMap="coachBean">
+		select coach.*,team.* from coach,team where
+		coach.cid=team.c_id
+		and coach.cid=#{cid}
+	</select>
+</mapper>

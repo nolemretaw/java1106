@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN" 
+	"http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+
+	<!-- 加载外部jdbc属性配置文件 -->
+	<properties resource="jdbc.properties"></properties>
+	
+	<!-- 全局配置 -->
+	<settings>
+		<!-- 调用myBatis自带的log4j框架打印日志 -->
+		<setting name="logImpl" value="STDOUT_LOGGING"/>
+		<!-- 打开二级缓存总开关，默认为true -->
+		<setting name="cacheEnabled" value="true"/>
+	</settings>
+	
+	<typeAliases>
+		<!-- type:类权限定名
+			alias:类的别名 -->
+		<typeAlias type="com.lanou.bean.Emp" alias="emp"/>
+		<typeAlias type="com.lanou.bean.User" alias="user"/>
+		<typeAlias type="com.lanou.bean.People" alias="people" />
+		<typeAlias type="com.lanou.bean.Card" alias="card"/>		
+	</typeAliases>
+	
+	<!-- 环境：mybatis作用在哪一个数据库上 -->
+	<environments default="environment">
+		<!-- 默认环境 -->
+		<environment id="environment">
+			<!-- 使用jdbc的事务管理机制 -->
+			<transactionManager type="JDBC" />
+			<!-- MyBatis自带的数据库连接池PooledDataSource -->
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driverClassName}" />
+				<property name="url" value="${jdbc.url}" />
+				<property name="username" value="${jdbc.username}" />
+				<property name="password" value="${jdbc.password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<!-- 加载sql映射文件 -->
+	<mappers>
+		<mapper resource="com/lanou/bean/UserMapper.xml" />
+		<mapper resource="com/lanou/bean/UMapper.xml" />
+		<mapper resource="com/lanou/bean/EmpMapper.xml" />
+		<mapper resource="com/lanou/dao/EMapper.xml" />
+		<mapper resource="com/lanou/dao/CoachMapper.xml" />
+		<mapper resource="com/lanou/dao/TeamMapper.xml" />
+		<mapper resource="com/lanou/dao/PeopleMapper.xml" />
+		<mapper resource="com/lanou/dao/CardMapper.xml" />
+		<mapper resource="com/lanou/dao/TeaAndStuMapper.xml" />
+	</mappers>
+</configuration> 

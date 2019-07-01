@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+<!-- 配置helloServlet地访问路径
+	1、两个servlet-name标签中内容必须一致
+	2、servlet-class代表servlet类的全限定名
+	3、url-pattern代表servlet访问路径，路径前必须带/
+ -->
+<servlet>
+	<servlet-name>hello</servlet-name>
+	<servlet-class>com.lanou.web.HelloServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>hello</servlet-name>
+	<!-- 访问servlet的路径 -->
+	<url-pattern>/hello</url-pattern>
+</servlet-mapping>
+</web-app>

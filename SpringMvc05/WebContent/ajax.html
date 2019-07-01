@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+	<button onclick="doClick()">获取SpringMvc返回的数据</button>
+	<hr/>
+	<table border="1" width="50%" align="center">
+		<tr>
+			<td>编号</td>
+			<td>账户</td>
+			<td>密码</td>
+		</tr>
+	</table>
+	
+	<script src="js/jquery-1.4.3.js" ></script>
+	<script type="text/javascript">
+		/* $(document).ready(function(){
+			$("button").click(function(){
+				alert("aaa");
+			});
+		}); */
+		//向服务器发起Ajax请求
+		//获取controller处理器返回的数据
+		function doClick(){
+			$("table tr:not(:first)").remove();
+			$.ajax({
+				type:"GET",
+				url:"ajax5.do",
+				success:function(data){
+					console.log(data,typeof data);
+					//遍历数组
+					for(var i=0;i<data.length;i++){
+						var user = data[i];
+						var $tr = $("<tr><td>"+user.id+"</td><td>"+user.username+"</td><td>"+user.password+"</td></tr>");
+						$("table").append($tr);
+					}
+					
+					
+					
+				}
+			});
+		}
+		
+	</script>
+</html>

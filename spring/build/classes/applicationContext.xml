@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"  
+	xmlns:jee="http://www.springframework.org/schema/jee" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd"
+		>
+		<!-- 配置一个bean组件
+			id:bean组件的唯一id
+			class:bean组件的类型
+			spring底层会执行 new GregorianCalender()
+		 -->
+		<bean id="c1" class="java.util.GregorianCalendar">
+		</bean>
+		
+		<!-- 以下两种方式构建对象（了解） -->
+		<!-- 静态工厂构建对象：在Spring底层执行Calendar.getInstance() -->
+		<bean id="c2" class="java.util.Calendar"
+			factory-method="getInstance">
+		</bean>
+		
+		<!-- 实例工程构建对象 
+			factory-bean:调方法的实例对象
+			factory-method:调用的方法名
+		-->
+		<bean id="date" factory-bean="c2" factory-method="getTime">
+		</bean>
+		
+		<!-- 配置自定义的bean对象
+			scope:配置bean对象的作用域范围
+				singleton:默认值，单例
+				prototype:多例，每次调用getBean()返回一个新对象
+				web应用中:
+					request:一次请求对应一个bean对象
+					session:一次session会话对应一个bean对象
+					global-session:一个application对应一个bean对象
+			2、bean生命周期
+				init-method:初始化方法
+				destroy-method:销毁方法
+				销毁方法在单例对象容器关闭时执行
+		 -->
+		<bean id="exam" class="com.lanou.bean.ExampleBean"
+		scope="singleton"
+		init-method="init"
+		destroy-method="destroy"
+		lazy-init="true"
+		></bean>
+		
+		<!-- DI依赖注入 -->
+		<!-- 配置student对象 -->
+		<bean id="stu" class="com.lanou.bean.Student">
+			<!-- 通过set方式给对象的属性注入值 
+				name:对象属性名
+				value:对象属性值
+			-->
+			<property name="name" value="张三"/>
+			<property name="age" value="30"/>
+		</bean>
+		
+		<!-- 配置Teacher对象-->
+		<bean id="tea" class="com.lanou.bean.Teacher">
+			<!-- 通过构造器给对象赋值
+				index:代表构造器列表中参数下标（自0开始）
+				value:传入属性值
+			 -->
+			<constructor-arg index="0" value="李四"/>
+			<constructor-arg index="1" value="男"/>
+		</bean>
+		
+		<!-- 配置School对象 -->
+		<bean id="sch" class="com.lanou.bean.School">
+			<!-- 
+			ref:代表带入spring容器中的其他bean对象 -->
+			<property name="student" ref="stu"/>
+			<property name="teacher" ref="tea"/>
+			<property name="date" value="2019-3-6"/>
+		</bean>
+		
+		<!-- 使用p命名空间方式给对象属性注入值 -->
+		<bean id="stu1" class="com.lanou.bean.Student"
+			p:name="李四" p:age="40"
+		>
+		</bean>
+		
+		<bean id="sch1" class="com.lanou.bean.School"
+			p:student-ref="stu1" p:teacher-ref="tea"
+			p:date="2019-3-6"
+		>
+		</bean>
+		
+		<!-- 其他各种值的注入方式 -->
+		<bean id="msg" class="com.lanou.bean.MessageBean">
+			<!-- null值注入 -->
+			<property name="name">
+				<null></null>
+			</property>
+			
+			<!-- int型注入 -->
+			<property name="age" value=" 18 ">
+				<!-- 规范写法 -->
+				<!-- <value>18</value> -->
+			</property>
+				
+			<!-- List型值的注入 -->
+			<property name="list">
+				<list>
+					<value>哈哈</value>
+					<value>呼呼</value>
+					<value>嘻嘻</value>
+				</list>
+			</property>
+			
+			<!-- Map集合的注入 -->
+			<property name="books">
+				<map>
+					<entry key="1001" value="Java基础"/>
+					<entry key="1002" value="JavaEE"/>
+					<entry key="1003" value="Spring框架"/>
+				</map>
+			</property>
+			
+			<!-- Set集合的注入 -->
+			<property name="cities">
+				<set>
+					<value>北京</value>
+					<value>上海</value>
+					<value>广州</value>
+				</set>
+			</property>
+			<!-- properties集合的注入 -->
+			<property name="props">
+				<props>
+					<prop key="username">admin</prop>
+					<prop key="password">1234</prop>
+				</props>
+			</property>
+		</bean>
+			
+			<!-- ===============外部集合定义方式=================== -->
+			<!-- 外部list -->
+			<util:list id="someList">
+				<value>O(∩_∩)O</value>
+				<value>哈哈</value>
+				<value>嘻嘻</value>
+			</util:list>
+			
+			<!-- 外部map -->
+			<util:map id="someMap">
+				<entry key="1004" value="三国"/>
+				<entry key="1005" value="水浒"/>
+				<entry key="1006" value="红楼"/>
+ 			</util:map>
+ 			
+ 			<!-- 外部set -->
+ 			<util:set id="someSet">
+ 				<value>西安</value>
+ 				<value>宝鸡</value>
+ 				<value>咸阳</value>
+ 			</util:set>
+ 			
+ 			<!-- 外部properties集合 -->
+ 			<util:properties id="someProps">
+ 				<prop key="url">jdbc:oracle://oracleDriver</prop>
+		  		<prop key="driver">oracle.jdbc.driver</prop>
+ 			</util:properties>
+ 			
+ 			
+ 			<!-- spring容器加载jdbc.properties配置文件 -->
+ 			<!-- <util:properties id="db" location="classpath:jdbc.properties">
+ 			</util:properties> -->
+ 			
+ 			<!-- 全局加载jdbc.properties配置
+ 				推荐方式:不会创建额外的Bean对象
+ 			 -->
+ 			<context:property-placeholder location="classpath:jdbc.properties"/>
+
+
+ 			
+ 			<!-- 配置MessaBean -->
+ 			<bean id="msg1" class="com.lanou.bean.MessageBean">
+ 				<!-- 引用Bean对象的属性值 -->
+ 				<!-- <property name="name" value="#{stu.name}"/> -->
+ 				
+ 				<!-- 引用list集合元素内容 -->
+ 				<!-- <property name="name" value="#{someList[0]}"></property> -->
+ 				
+ 				<!-- 引用Map集合元素内容 -->
+ 				<!-- <property name="name" value="#{someMap['1004']}"></property> -->
+ 				
+ 				<!-- 引用properties集合元素内容 -->
+ 				<!-- <property name="name" value="#{someProps.url}"></property> -->
+				
+				<!-- 引用外部properties配置文件中内容 -->
+				<!-- <property name="name" value="#{db.username}"></property> -->				
+				
+				<!-- 全局加载方式 引入外部properties配置文件内容 -->
+				<property name="name" value="${jdbc.username}"></property>
+				 
+ 				<property name="age" value="24"/>
+ 				<property name="list" ref="someList"/>
+ 				<property name="books" ref="someMap"/>
+ 				<property name="cities" ref="someSet"/>
+ 				<property name="props" ref="someProps"/>
+ 			
+			</bean>
+</beans>
+
+
+
+
+
+
+
+

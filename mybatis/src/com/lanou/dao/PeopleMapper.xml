@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <!-- 
+	一对多的关联映射查询
+-->
+<mapper namespace="com.lanou.dao.PeopleMapper">
+	<resultMap type="people" id="peopleBean">
+		<id property="uid" column="uid"/>
+		<result property="uname" column="uname"/>
+		<!-- 对方（多方）实体类与表之间的映射 
+				property:当前实体类中用于描述多方的集合属性名
+				ofType:多方实体类全限定名-->
+		<collection property="cards" ofType="card">
+			<id property="cid" column="cid"/>
+			<result property="cno" column="cno"/>
+			<result property="remark" column="remark"/>
+		</collection>
+	</resultMap>
+	
+	<!-- 根据id查询一个people对象以及所关联的card集合 -->
+	<select id="findPeopleById"
+			parameterType="int"
+			resultMap="peopleBean">
+		select people.*,card.* from people,card
+		where people.uid=card.u_id and people.uid=#{uid}
+	</select>
+</mapper>

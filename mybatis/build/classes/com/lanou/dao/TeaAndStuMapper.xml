@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <!-- 
+	多对多的关联映射查询
+-->
+<mapper namespace="com.lanou.dao.TeaAndStuMapper">
+	<resultMap type="com.lanou.bean.TeaAndStu" id="teaAndStuBean">
+		<id property="id" column="id"/>
+		<!-- 多方teacher实体类与teacher表的映射 -->
+		<collection property="teachers"
+					ofType="com.lanou.bean.Teacher">
+			<id property="tid" column="tid"/>
+			<result property="tname" column="tname"/>
+			<result property="subject" column="subject"/>
+		</collection>
+		<!-- 多方student实体类与student表的映射 -->
+		<collection property="students"
+					ofType="com.lanou.bean.Student">
+			<id property="sid" column="sid"/>
+			<result property="sname" column="sname"/>
+			<result property="gender" column="gender"/>
+		</collection>
+	</resultMap>
+	
+	<!-- 传入teacher的id,查找teacher以及他所关联的student集合 -->
+	<select id="findTeaAndStuById" parameterType="int"
+				resultMap="teaAndStuBean">
+		select t.*,s.*,ts.*
+		from teacher t,student s,teastu ts
+		where t.tid=ts.tid and ts.sid=s.sid and t.tid=#{tid}
+	</select>
+</mapper>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>测试路径匹配</h3>
+	<ul>
+		<li>
+			严格匹配:url-pattern /uri<br/>
+			<a href="uri">uri</a>
+		</li>
+		<li>
+			通配符匹配:url-pattern /emp/* <br/>
+			<a href="addEmp">addEmp</a>
+			<br/>
+			<a href="/emp/abc">/emp/abc</a>
+			<br/>
+			<a href="emp/">emp/</a>
+			<br/>
+			<a href="emp/a">emp/a</a>
+			<br/>
+			<a href="emp/a/b">emp/a/b</a>
+		</li>
+		<li>
+			后缀匹配:url-pattern *.do	<br/>
+			<a href="addEmp.do">addEmp.do</a><br/>
+			<a href="emp/updateEmp.do">emp/updateEmp.do</a><br/>
+			<a href="test.html">test.html</a><br/>
+			<a href="/emp/deleteEmp.do">/emp/deleteEmp.do</a><br/>
+			<a href="/findEmp.do">/findEmp.do</a><br/>
+		</li>
+	</ul>
+</body>
+</html>

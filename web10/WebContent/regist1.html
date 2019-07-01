@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<!-- 注册失去焦点事件 -->
+		账号:<input type="text" name="username"
+		onblur="checkName()" id="username"/><br/>
+		密码:<input type="password" name="password"><br/>
+		<input type="button" value="注册"/>
+	</form>
+	
+	<script>
+		/* 输入框失去焦点时，利用Ajax将用户名单独提交给服务器，检测用户名是否存在 */
+		function checkName() {
+			//1、构建一个Ajax对象
+			var xhr;
+			if (window.XMLHttpRequest) {//其他浏览器
+				xhr = new XMLHttpRequest();
+			}else{//ie8以下浏览器
+				xhr = new ActiveXObject("Microsoft.XmlHttpRequest");
+			}
+			
+			//2、初始化Ajax对象，建立连接
+			//请求方法，请求路径，是否异步
+			var nameInput = document.getElementById("username");
+			//GET请求
+			//xhr.open("GET","checkName.do?username="+nameInput.value,true);
+			
+			//POST请求
+			xhr.open("POST","checkName.do",true);
+			
+			//3、监听Ajax对象发送数据状态，以及可以取出响应数据
+			xhr.onreadystatechange=function(){
+				//4:表示xhr对象已经完全接收了服务器返回的数据，
+				//200:http状态码，表示响应成功
+				if (xhr.readyState==4 && xhr.status==200) {
+					//取出服务器返回给xhr的响应结果
+					var txt = xhr.responseText;
+					console.log(txt);	
+				}
+			};
+			
+			//POST请求，设置请求消息头
+			 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); 
+			
+			//4发送请求
+			//GET请求
+		    //xhr.send(); 
+			
+			//POST请求
+			xhr.send("username="+nameInput.value);
+		}
+	</script>
+</body>
+</html>
