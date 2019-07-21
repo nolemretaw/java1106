@@ -2,32 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d0b84ae-1043-42c0-8e77-735ba0141c3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lanou/config/TimeConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lanou/util/TimeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/bean/cluster/ClusterEmp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/bean/master/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/bean/Emp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/bean/quartz/TransforJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/config/ClusterDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/config/ClusterDataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/config/MasterDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/config/MasterDataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/controller/EmpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/mapper/cluster/ClusterEmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/mapper/cluster/ClusterEmpMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/mapper/master/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/mapper/master/EmpMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/service/cluster/ClusterEmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/service/cluster/ClusterEmpService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/service/cluster/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/service/cluster/EmpServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/service/master/EmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/service/master/EmpService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lanou/service/master/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lanou/service/master/EmpServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/cluster/ClusterEmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/cluster/ClusterEmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/master/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/master/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/html/addEmp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/html/addEmp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lanou/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lanou/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lanou/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lanou/controller/EmpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/html/addEmp.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/html/addEmp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssm00/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm00/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -42,7 +16,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.80738366">
+    <splitter split-orientation="vertical" split-proportion="0.7264">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -84,8 +58,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/lanou/controller/EmpController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="299">
-                  <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
+                <state relative-caret-position="399">
+                  <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1373#1374#0" expanded="true" />
@@ -324,7 +298,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="133" />
+    <option name="x" value="131" />
     <option name="width" value="1695" />
     <option name="height" value="1045" />
   </component>
@@ -587,12 +561,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563166192769</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加了定时器开启和关闭">
+      <created>1563691817090</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563691817090</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="107" y="0" width="1356" height="836" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -607,7 +587,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932975" visible="true" weight="0.11505682" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932975" visible="true" weight="0.22946176" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -654,7 +634,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="springboot01" />
-    <option name="LAST_COMMIT_MESSAGE" value="springboot01" />
+    <MESSAGE value="增加了定时器开启和关闭" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了定时器开启和关闭" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lanou/mapper/master/mapper/cluster.java" />
@@ -886,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lanou/controller/EmpController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
+        <state relative-caret-position="399">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1373#1374#0" expanded="true" />
