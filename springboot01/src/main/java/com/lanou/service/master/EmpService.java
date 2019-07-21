@@ -2,7 +2,7 @@ package com.lanou.service.master;
 
 import java.util.List;
 
-import com.lanou.bean.master.Emp;
+import com.lanou.bean.Emp;
 
 public interface EmpService {
 	public List<Emp> findAllEmp();

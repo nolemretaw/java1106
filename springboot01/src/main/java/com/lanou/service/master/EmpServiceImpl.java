@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.lanou.bean.master.Emp;
+import com.lanou.bean.Emp;
 import com.lanou.mapper.master.EmpMapper;
 
 @Service("empService")

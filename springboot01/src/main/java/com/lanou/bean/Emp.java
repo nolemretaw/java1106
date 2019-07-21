@@ -1,4 +1,4 @@
-package com.lanou.bean.master;
+package com.lanou.bean;
 
 import java.io.Serializable;
 import java.sql.Date;
@@ -11,12 +11,21 @@ public class Emp implements Serializable{
 	private double salary;
 	private Date hiredate;
 	private int deptno;
-	
+	private String timeStamp;
+
+	public String getTimeStamp() {
+		return timeStamp;
+	}
+
+	public void setTimeStamp(String timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+
 	public Emp() {
 		super();
 	}
 
-	public Emp(int id, String name, String sex, String job, double salary, Date hiredate, int deptno) {
+	public Emp(int id, String name, String sex, String job, double salary, Date hiredate, int deptno,String timeStamp) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -25,6 +34,7 @@ public class Emp implements Serializable{
 		this.salary = salary;
 		this.hiredate = hiredate;
 		this.deptno = deptno;
+		this.timeStamp = timeStamp;
 	}
 
 	public int getId() {
@@ -86,6 +96,6 @@ public class Emp implements Serializable{
 	@Override
 	public String toString() {
 		return "Emp [id=" + id + ", name=" + name + ", sex=" + sex + ", job=" + job + ", salary=" + salary
-				+ ", hiredate=" + hiredate + ", deptno=" + deptno + "]";
+				+ ", hiredate=" + hiredate + ", deptno=" + deptno +",timeStamp="+timeStamp+ "]";
 	}
 }
