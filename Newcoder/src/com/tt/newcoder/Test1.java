@@ -9,15 +9,9 @@ public class Test1 {
 		Scanner in = new Scanner(System.in);
 		String str = in.nextLine();
 		str.trim();
-		int length = str.length();
-		int i = length;
-		for (; i >= 1 ; i--) {
-			if (str.charAt(i-1)>'z'||str.charAt(i-1)<'A') {
-				break;
-			}
-		}
+		String substring = str.substring(str.lastIndexOf(" ")+1);
 		
-		System.out.println("×îºó"+(length-i));
+		System.out.println(substring.length());
 		in.close();
 	}
 }
