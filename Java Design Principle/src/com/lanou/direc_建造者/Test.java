@@ -1,4 +1,4 @@
-package com.lanou.direc_½¨ÔìÕß;
+package com.lanou.direc_å»ºé€ è€…;
 public class Test {
 	public static void main(String[] args) {
 		PersonDirector pd = new PersonDirector();

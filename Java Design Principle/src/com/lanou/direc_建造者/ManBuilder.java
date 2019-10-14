@@ -1,4 +1,4 @@
-package com.lanou.direc_½¨ÔìÕß;
+package com.lanou.direc_å»ºé€ è€…;
 
 public class ManBuilder implements PersonBuilder {
 	Person person;
@@ -7,20 +7,20 @@ public class ManBuilder implements PersonBuilder {
 	}
 	@Override
 	public void buildHead() {
-		person.setHead("Í·²¿");
-		
+		person.setHead("å¤´éƒ¨");
+
 	}
 
 	@Override
 	public void buildBody() {
 		// TODO Auto-generated method stub
-		person.setHead("Éí²¿");
+		person.setHead("èº«éƒ¨");
 	}
 
 	@Override
 	public void buildFoot() {
 		// TODO Auto-generated method stub
-		person.setHead("½Å²¿");
+		person.setHead("è„šéƒ¨");
 	}
 
 	@Override
@@ -28,5 +28,5 @@ public class ManBuilder implements PersonBuilder {
 		// TODO Auto-generated method stub
 		return person;
 	}
-	
+
 }

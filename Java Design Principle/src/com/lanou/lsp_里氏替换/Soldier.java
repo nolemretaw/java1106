@@ -1,5 +1,5 @@
-package com.lanou.lsp_ÀïÊÏÌæ»»;
-//Ê¿±øÊµÏÖÀà
+package com.lanou.lsp_é‡Œæ°æ›¿æ¢;
+//å£«å…µå®ç°ç±»
 public class Soldier {
 	
 	private AbstractGun gun;
@@ -9,7 +9,7 @@ public class Soldier {
 	}
 	
 	public void killEnemy() {
-		System.out.println("Ê¿±ø¿ªÊ¼Éä»÷");
+		System.out.println("å£«å…µå¼€å§‹å°„å‡»");
 		this.gun.shoot();
 	}
 }

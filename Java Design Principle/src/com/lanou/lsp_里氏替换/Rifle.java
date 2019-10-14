@@ -1,7 +1,7 @@
-package com.lanou.lsp_ÀïÊÏÌæ»»;
+package com.lanou.lsp_é‡Œæ°æ›¿æ¢;
 
 public class Rifle extends AbstractGun{
 	public void shoot(){
-	      System.out.println("²½Ç¹Éä»÷...");
+	      System.out.println("æ­¥æªå°„å‡»...");
 	   }
 }

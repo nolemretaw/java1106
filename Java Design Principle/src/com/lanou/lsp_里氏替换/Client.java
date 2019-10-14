@@ -1,25 +1,25 @@
-package com.lanou.lsp_里氏替换;
+package com.lanou.lsp_閲屾皬鏇挎崲;
 
 public class Client {
 
 	public static void main(String[] args) {
 		/*Soldier soldier = new Soldier();
-		//士兵使用手枪
+		//澹叺浣跨敤鎵嬫灙
 		soldier.setGun(new Handgun());
 		soldier.killEnemy();
 		
-		//士兵使用步枪
+		//澹叺浣跨敤姝ユ灙
 		soldier.setGun(new Rifle());
 		soldier.killEnemy();
 		
-		//士兵使用机枪
+		//澹叺浣跨敤鏈烘灙
 		soldier.setGun(new CachineGun());
 		soldier.killEnemy();
 		*/
-		
-		//狙击手用狙击步枪
+
+		//鐙欏嚮鎵嬬敤鐙欏嚮姝ユ灙
 		Snipper snipper = new Snipper();
-		snipper.killEnemy(new AUG());//子类有其个性后无法里氏替换
+		snipper.killEnemy(new AUG());//瀛愮被鏈夊叾涓�у悗鏃犳硶閲屾皬鏇挎崲
 	}
 
 }

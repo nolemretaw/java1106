@@ -1,7 +1,7 @@
-package com.lanou.lsp_ÀïÊÏÌæ»»;
+package com.lanou.lsp_é‡Œæ°æ›¿æ¢;
 
 public class CachineGun extends AbstractGun{
 	 public void shoot(){
-	      System.out.println("»úÇ¹Éä»÷...");
+	      System.out.println("æœºæªå°„å‡»...");
 	   }
 }

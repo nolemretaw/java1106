@@ -1,11 +1,10 @@
-package com.lanou.lsp_里氏替换;
-//手枪，步枪，机枪的实现类
+package com.lanou.lsp_閲屾皬鏇挎崲;
+//鎵嬫灙锛屾鏋紝鏈烘灙鐨勫疄鐜扮被
 public class Handgun extends AbstractGun{
 
-	@Override
 	public void shoot() {
 		// TODO Auto-generated method stub
-		System.out.println("手枪射击...");
+		System.out.println("鎵嬫灙灏勫嚮...");
 	}
 
 }

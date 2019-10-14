@@ -1,6 +1,6 @@
-package com.lanou.lsp_ÀïÊÏÌæ»»;
-//Ç¹Ö§³éÏóÀà
+package com.lanou.lsp_é‡Œæ°æ›¿æ¢;
+//æªæ”¯æŠ½è±¡ç±»
 public abstract class AbstractGun {
-	 //Ç¹Ö§Éä»÷µÄ·½·¨
+	 //æªæ”¯å°„å‡»çš„æ–¹æ³•
 	   public abstract void shoot();
 }

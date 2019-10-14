@@ -1,5 +1,5 @@
-package com.lanou.lsp_里氏替换;
-//狙击手类
+package com.lanou.lsp_閲屾皬鏇挎崲;
+//鐙欏嚮鎵嬬被
 public class Snipper {
 	
 	public void killEnemy(AUG aug) {

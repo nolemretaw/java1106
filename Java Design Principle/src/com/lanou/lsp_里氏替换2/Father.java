@@ -1,12 +1,12 @@
-package com.lanou.lsp_ÀïÊÏÌæ»»2;
+package com.lanou.lsp_é‡Œæ°æ›¿æ¢2;
 
 import java.util.Collection;
 import java.util.HashMap;
 
-//¸²¸Ç»òÊµÏÖ¸¸ÀàµÄ·½·¨Ê±ÊäÈë²ÎÊı¿ÉÒÔ±»·Å´ó
+//è¦†ç›–æˆ–å®ç°çˆ¶ç±»çš„æ–¹æ³•æ—¶è¾“å…¥å‚æ•°å¯ä»¥è¢«æ”¾å¤§
 public class Father {
 	public Collection doSomthing(HashMap map) {
-		System.out.println("¸¸Àà±»Ö´ĞĞ");
+		System.out.println("çˆ¶ç±»è¢«æ‰§è¡Œ");
 		return map.values();
 	}
 }

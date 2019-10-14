@@ -1,4 +1,4 @@
-package com.lanou.direc_½¨ÔìÕß;
+package com.lanou.direc_å»ºé€ è€…;
 
 public class Person {
 	private String head;

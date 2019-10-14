@@ -1,4 +1,4 @@
-package com.lanou.direc_½¨ÔìÕß;
+package com.lanou.direc_å»ºé€ è€…;
 
 public class PersonDirector {
 	public Person constructPerson(PersonBuilder pb){
@@ -6,6 +6,6 @@ public class PersonDirector {
 		pb.buildBody();
 		pb.buildFoot();
 		return pb.buildPerson();
-		
+
 	}
 }

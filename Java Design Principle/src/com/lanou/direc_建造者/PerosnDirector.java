@@ -1,10 +1,10 @@
-package com.lanou.direc_½¨ÔìÕß;
+package com.lanou.direc_å»ºé€ è€…;
 
 public class PerosnDirector {
 	public Person constructPerson(PersonBuilder pb){
 		pb.buildHead();
 		pb.buildBody();
 		pb.buildFoot();
-		return pb.buildPerson();	
+		return pb.buildPerson();
 	}
 }

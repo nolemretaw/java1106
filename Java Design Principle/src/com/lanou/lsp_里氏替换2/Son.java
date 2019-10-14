@@ -1,11 +1,11 @@
-package com.lanou.lsp_ÀïÊÏÌæ»»2;
+package com.lanou.lsp_é‡Œæ°æ›¿æ¢2;
 
 import java.util.Collection;
 import java.util.Map;
 
 public class Son extends Father{
 	public Collection doSomething(Map map) {
-		System.out.println("×ÓÀà±»Ö´ĞĞ");
+		System.out.println("å­ç±»è¢«æ‰§è¡Œ");
 		return map.values();
 	}
 }

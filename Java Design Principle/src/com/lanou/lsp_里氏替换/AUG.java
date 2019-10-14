@@ -1,11 +1,11 @@
-package com.lanou.lsp_ÀïÊÏÌæ»»;
-//AUG¾Ñ»÷²½Ç¹
+package com.lanou.lsp_é‡Œæ°æ›¿æ¢;
+//AUGç‹™å‡»æ­¥æª
 public class AUG extends Rifle{
 	public void zoomOut() {
-		System.out.println("Í¨¹ı·Å´ó¾µ¹Û²ì");
+		System.out.println("é€šè¿‡æ”¾å¤§é•œè§‚å¯Ÿ");
 	}
-	
+
 	public void shoot() {
-		System.out.println("AUGÉä»÷...");
+		System.out.println("AUGå°„å‡»...");
 	}
 }
