@@ -2,13 +2,12 @@ package com.tt.newcoder;
 
 import java.util.Scanner;
 
-//•连续输入字符串，请按长度为8拆分每个字符串后输出到新的字符串数组； 
-//•长度不是8整数倍的字符串请在后面补数字0，空字符串不处理
+//鈥㈣繛缁緭鍏ュ瓧绗︿覆锛岃鎸夐暱搴︿负8鎷嗗垎姣忎釜瀛楃涓插悗杈撳嚭鍒版柊鐨勫瓧绗︿覆鏁扮粍锛� 
+//鈥㈤暱搴︿笉鏄�8鏁存暟鍊嶇殑瀛楃涓茶鍦ㄥ悗闈㈣ˉ鏁板瓧0锛岀┖瀛楃涓蹭笉澶勭悊
 public class Main4 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		while (in.hasNext()) {
-			
 			String str = in.next();
 			split(str);
 		}

@@ -6,27 +6,34 @@ import java.util.regex.Pattern;
 //接受一个十六进制的数值字符串，输出该数值的十进制字符串。（多组同时输入 ）
 public class Main5 {
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		while(in.hasNextLine()) {
-			String str = in.next();
-			String substring = str.substring(2).toUpperCase();
-			System.out.println(substring);
-			String[] split = substring.split("");
-			int hxNum = 0;
-			String regex = "[A-F]";
-			Pattern pattern = Pattern.compile(regex);
-			for (int i = split.length , j = 0; i >0 ; i--,j++) {
-				int weiNum = 0;
-				if (pattern.matches(regex, split[j])) {
-					weiNum = ((int) split[j].charAt(0)) - 65 + 10;
-				}else {
-					weiNum = Integer.parseInt(split[j]);
-				}
-				hxNum+=weiNum*(int)Math.pow(16.0, i-1);
+		Scanner sc = new Scanner(System.in);
+		while (sc.hasNext()) {
+			String str = sc.nextLine();
+			System.out.println(fun(str.substring(2)));
+		}
+	}
+
+	private static int fun(String s) {
+		// TODO Auto-generated method stub
+		int n = 0;
+		int count = 0;
+		int temp = 0;
+		char ch;
+		
+		while(count<s.length()) {
+			ch = s.charAt(s.length()-1-count);
+			if (ch>='0'&&ch<='9') {
+				temp = ch - '0';
+			}else if (ch>='A'&&ch<='Z') {
+				temp = ch-'A'+10;
+			}else if (ch>='a'&&ch<='z') {
+				temp = ch-'z'+10;
+			}else {
+				break;
 			}
-			System.out.println(hxNum);
+			n += temp*Math.pow(16, count++);
 		}
 		
-//		System.out.println(Integer.);
+		return n;
 	}
 }

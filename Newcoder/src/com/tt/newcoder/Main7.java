@@ -9,13 +9,15 @@ public class Main7 {
  * */
 	
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		while (in.hasNextDouble()) {
-			double d = in.nextDouble();
-			long round = Math.round(d);
-			System.out.println(round);
-		}
-
+		Scanner sc = new Scanner(System.in);
+		double d = sc.nextDouble();
+		System.out.println(getReturn(d));
 	}
+
+private static int getReturn(double d) {
+	int i = (int) d;
+	return i =(d-i)>=0.5?i+1:i;
+	
+}
 
 }
