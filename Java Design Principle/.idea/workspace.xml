@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87be4511-fd67-493c-9cf4-7f536794cf98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/lanou/CompositePattern/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lanou/CompositePattern/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/RedShapeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/ShapeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Test.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Java Design Principle" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Shape.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Rectangle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+              <folding>
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Circle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/ShapeDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#278#279#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/RedShapeDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+              <folding>
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>第 3 种方式</find>
+      <find>femalePersons</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>简单饿汉单例</replace>
+      <replace>singlePersons</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Item.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Packing.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step1/Packing.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step2/Wrapper.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step2/Bottle.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step3/ColdDrink.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step3/Burger.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step4/VegBurger.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step4/ChickenBurger.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step4/Coke.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step4/Pepsi.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step6/MealBuilder.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step5/Meal.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BuilderPattern/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/PrototypePattern/Circle.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/PrototypePattern/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/PrototypePattern/Square.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/PrototypePattern/Shape.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/PrototypePattern/ShapeCache.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/PrototypePattern/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/AdapterPattern/MediaPlayer.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/AdapterPattern/VIcPlayer.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/AdapterPattern/AdvicedMediaPlayer.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/AdapterPattern/VlcPlayer.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/AdapterPattern/Mp4Player.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/AdapterPattern/MediaAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/AdapterPattern/AdvancedMediaPlayer.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/AdapterPattern/AudioPlayer.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/AdapterPattern/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BridgePattern/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BridgePattern/Circle.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BridgePattern/DrawAPI.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BridgePattern/GreenCircle.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BridgePattern/RedCircle.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/BridgePattern/Shape.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/FilterPattern/Person.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/FilterPattern/Criteria.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/FilterPattern/CriteriaMale.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/FilterPattern/CriteriaFemale.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/FilterPattern/OrCriteria.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/FilterPattern/CriteriaSingle.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/FilterPattern/AndCriteria.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/FilterPattern/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/CompositePattern/Employee.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/CompositePattern/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Shape.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Circle.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/ShapeDecorator.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/RedShapeDecorator.java" />
+        <option value="$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Test.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="536" />
+    <option name="y" value="92" />
+    <option name="width" value="1038" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Java Design Principle" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Java Design Principle" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Java Design Principle" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Java Design Principle" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lanou" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Java Design Principle" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Java Design Principle" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lanou" type="1f31426a:PackageElementNode" />
+              <item name="BuilderPattern.Step1" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Java Design Principle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java Design Principle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java Design Principle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java Design Principle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java Design Principle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java Design Principle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lanou" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Java Design Principle" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Java Design Principle" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Java Design Principle" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Java Design Principle" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Java Design Principle" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Java Design Principle" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Java Design Principle" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Java Design Principle" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lanou" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Java Design Principle" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Java Design Principle" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lanou" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="DecoratorPattern" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lanou.DecoratorPattern" />
+      <recent name="com.lanou.FilterPattern" />
+      <recent name="com.lanou.BridgePattern" />
+      <recent name="com.lanou.AdapterPattern" />
+      <recent name="com.lanou.PrototypePattern" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java1106\Java Design Principle\src\com\lanou\AbstractFactoryPattern\color" />
+      <recent name="D:\java1106\Java Design Principle\src\com\lanou\AbstractFactoryPattern\shape" />
+      <recent name="D:\java1106\Java Design Principle\src\com\lanou\AbstractFactoryPattern" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test (4)">
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lanou.PrototypePattern.Test" />
+      <module name="Java Design Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lanou.PrototypePattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lanou.AdapterPattern.Test" />
+      <module name="Java Design Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lanou.AdapterPattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lanou.BridgePattern.Test" />
+      <module name="Java Design Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lanou.BridgePattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lanou.CompositePattern.Test" />
+      <module name="Java Design Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lanou.CompositePattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lanou.BuilderPattern.Test" />
+      <module name="Java Design Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lanou.BuilderPattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test (4)" />
+        <item itemvalue="Application.Test (3)" />
+        <item itemvalue="Application.Test (2)" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87be4511-fd67-493c-9cf4-7f536794cf98" name="Default Changelist" comment="" />
+      <created>1571063196887</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571063196887</updated>
+      <workItem from="1571063201035" duration="1230000" />
+      <workItem from="1571809771166" duration="4991000" />
+      <workItem from="1572485577460" duration="12113000" />
+      <workItem from="1572503285372" duration="2952000" />
+      <workItem from="1572506765170" duration="13962000" />
+      <workItem from="1572587800460" duration="7389000" />
+    </task>
+    <task id="LOCAL-00001" summary="新增设计模式">
+      <created>1572503368911</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572503368911</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新增设计模式">
+      <created>1572591370188</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572591370188</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="42637000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="429" y="74" width="830" height="832" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.81768954" weight="0.33074936" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.18231046" side_tool="true" weight="0.18607764" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21875" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32957748" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966533" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="BPMNPalette" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3299866" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.81768954" visible="true" weight="0.18607764" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.18231046" side_tool="true" weight="0.18607764" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2197183" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32957748" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966533" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="BPMNPalette" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3299866" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增设计模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增设计模式" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="uml://JAVA/com.lanou.BuilderPattern.Step1">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.lanou.BuilderPattern.Step1</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">com.lanou.BuilderPattern.Step1.Packing</node>
+            <node x="0.0" y="71.0">com.lanou.BuilderPattern.Step1.Item</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-174.0" y="-29.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.lanou.BuilderPattern.Step3">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.lanou.BuilderPattern.Step3</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">com.lanou.BuilderPattern.Step3.ColdDrink</node>
+            <node x="0.0" y="71.0">com.lanou.BuilderPattern.Step3.Burger</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-167.0" y="-29.0" />
+          <SelectedNodes>
+            <node>com.lanou.BuilderPattern.Step3.ColdDrink</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.lanou.BuilderPattern.Step6.MealBuilder">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.lanou.BuilderPattern.Step6.MealBuilder</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">com.lanou.BuilderPattern.Step6.MealBuilder</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-161.0" y="-64.0" />
+          <SelectedNodes>
+            <node>com.lanou.BuilderPattern.Step6.MealBuilder</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.lanou.BuilderPattern.Step6">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.lanou.BuilderPattern.Step6</OriginalElement>
+          <nodes>
+            <node x="" y="">com.lanou.BuilderPattern.Step6.MealBuilder</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-161.0" y="-64.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.lanou.direc_建造者">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.lanou.direc_建造者</OriginalElement>
+          <nodes>
+            <node x="" y="">com.lanou.direc_建造者.PersonDirector</node>
+            <node x="" y="">com.lanou.direc_建造者.Test</node>
+            <node x="" y="">com.lanou.direc_建造者.PersonBuilder</node>
+            <node x="" y="">com.lanou.direc_建造者.ManBuilder</node>
+            <node x="" y="">com.lanou.direc_建造者.PerosnDirector</node>
+            <node x="" y="">com.lanou.direc_建造者.Person</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="132.0" y="158.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step3/Burger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step3/ColdDrink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step1/Packing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step6/MealBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step4/ChickenBurger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step2/Wrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step5/Meal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.lanou.BuilderPattern">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.lanou.BuilderPattern</OriginalElement>
+          <nodes>
+            <node x="0.0" y="568.0">com.lanou.BuilderPattern.Test</node>
+            <node x="60.49999999999997" y="142.0">com.lanou.BuilderPattern.Step3.ColdDrink</node>
+            <node x="286.0" y="262.0">com.lanou.BuilderPattern.Step4.VegBurger</node>
+            <node x="71.5" y="377.0">com.lanou.BuilderPattern.Step1.Packing</node>
+            <node x="511.0" y="377.0">com.lanou.BuilderPattern.Step6.MealBuilder</node>
+            <node x="143.0" y="475.0">com.lanou.BuilderPattern.Step2.Bottle</node>
+            <node x="345.0" y="142.0">com.lanou.BuilderPattern.Step3.Burger</node>
+            <node x="311.0" y="377.0">com.lanou.BuilderPattern.Step5.Meal</node>
+            <node x="429.0" y="262.0">com.lanou.BuilderPattern.Step4.ChickenBurger</node>
+            <node x="0.0" y="262.0">com.lanou.BuilderPattern.Step4.Coke</node>
+            <node x="0.0" y="475.0">com.lanou.BuilderPattern.Step2.Wrapper</node>
+            <node x="143.0" y="262.0">com.lanou.BuilderPattern.Step4.Pepsi</node>
+            <node x="201.62499999999997" y="0.0">com.lanou.BuilderPattern.Step1.Item</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.lanou.BuilderPattern.Step4.Coke" target="com.lanou.BuilderPattern.Step3.ColdDrink">
+              <point x="-2.8421709430404007E-14" y="-35.0" />
+              <point x="61.49999999999997" y="237.0" />
+              <point x="96.74999999999997" y="237.0" />
+              <point x="-36.25" y="35.0" />
+            </edge>
+            <edge source="com.lanou.BuilderPattern.Step2.Bottle" target="com.lanou.BuilderPattern.Step1.Packing">
+              <point x="0.0" y="-24.0" />
+              <point x="204.5" y="450.0" />
+              <point x="163.75" y="450.0" />
+              <point x="30.75" y="24.0" />
+            </edge>
+            <edge source="com.lanou.BuilderPattern.Step2.Wrapper" target="com.lanou.BuilderPattern.Step1.Packing">
+              <point x="0.0" y="-24.0" />
+              <point x="61.5" y="450.0" />
+              <point x="102.25" y="450.0" />
+              <point x="-30.75" y="24.0" />
+            </edge>
+            <edge source="com.lanou.BuilderPattern.Step3.ColdDrink" target="com.lanou.BuilderPattern.Step1.Item">
+              <point x="0.0" y="-35.0" />
+              <point x="132.99999999999997" y="117.0" />
+              <point x="238.62499999999997" y="117.0" />
+              <point x="-37.0" y="46.0" />
+            </edge>
+            <edge source="com.lanou.BuilderPattern.Step3.Burger" target="com.lanou.BuilderPattern.Step1.Item">
+              <point x="0.0" y="-35.0" />
+              <point x="419.0" y="117.0" />
+              <point x="312.625" y="117.0" />
+              <point x="37.0" y="46.0" />
+            </edge>
+            <edge source="com.lanou.BuilderPattern.Step4.ChickenBurger" target="com.lanou.BuilderPattern.Step3.Burger">
+              <point x="0.0" y="-35.0" />
+              <point x="490.5" y="237.0" />
+              <point x="456.0" y="237.0" />
+              <point x="37.0" y="35.0" />
+            </edge>
+            <edge source="com.lanou.BuilderPattern.Step4.VegBurger" target="com.lanou.BuilderPattern.Step3.Burger">
+              <point x="0.0" y="-35.0" />
+              <point x="347.5" y="237.0" />
+              <point x="382.0" y="237.0" />
+              <point x="-37.0" y="35.0" />
+            </edge>
+            <edge source="com.lanou.BuilderPattern.Step4.Pepsi" target="com.lanou.BuilderPattern.Step3.ColdDrink">
+              <point x="0.0" y="-35.0" />
+              <point x="204.5" y="237.0" />
+              <point x="169.24999999999997" y="237.0" />
+              <point x="36.25" y="35.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.665742024965326" x="838.0" y="485.0" />
+          <SelectedNodes>
+            <node>com.lanou.BuilderPattern.Test</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BuilderPattern/Step1/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/PrototypePattern/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/PrototypePattern/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/PrototypePattern/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/PrototypePattern/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/PrototypePattern/ShapeCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#293#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BuilderPattern/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/PrototypePattern/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/AdapterPattern/VlcPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/AdapterPattern/Mp4Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/AdapterPattern/AdvancedMediaPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/AdapterPattern/MediaPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/AdapterPattern/MediaAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/AdapterPattern/AudioPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/AdapterPattern/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.lanou.BridgePattern">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.lanou.BridgePattern</OriginalElement>
+          <nodes>
+            <node x="0.0" y="144.0">com.lanou.BridgePattern.Circle</node>
+            <node x="51.0" y="0.0">com.lanou.BridgePattern.Shape</node>
+            <node x="0.0" y="518.0">com.lanou.BridgePattern.Test</node>
+            <node x="127.0" y="327.0">com.lanou.BridgePattern.DrawAPI</node>
+            <node x="0.0" y="425.0">com.lanou.BridgePattern.GreenCircle</node>
+            <node x="254.0" y="425.0">com.lanou.BridgePattern.RedCircle</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.lanou.BridgePattern.Circle" target="com.lanou.BridgePattern.Shape">
+              <point x="0.0" y="-69.0" />
+              <point x="0.0" y="47.0" />
+            </edge>
+            <edge source="com.lanou.BridgePattern.RedCircle" target="com.lanou.BridgePattern.DrawAPI">
+              <point x="0.0" y="-24.0" />
+              <point x="371.0" y="400.0" />
+              <point x="302.5" y="400.0" />
+              <point x="58.5" y="24.0" />
+            </edge>
+            <edge source="com.lanou.BridgePattern.GreenCircle" target="com.lanou.BridgePattern.DrawAPI">
+              <point x="0.0" y="-24.0" />
+              <point x="117.0" y="400.0" />
+              <point x="185.5" y="400.0" />
+              <point x="-58.5" y="24.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8191126279863481" x="244.0" y="330.73541666666665" />
+          <SelectedNodes>
+            <node>com.lanou.BridgePattern.Shape</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BridgePattern/DrawAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BridgePattern/RedCircle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BridgePattern/GreenCircle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BridgePattern/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BridgePattern/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/BridgePattern/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/FilterPattern/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/FilterPattern/CriteriaMale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/FilterPattern/CriteriaFemale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/FilterPattern/Criteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/FilterPattern/OrCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/FilterPattern/CriteriaSingle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/FilterPattern/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#338#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/FilterPattern/AndCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/CompositePattern/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/CompositePattern/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/RedShapeDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou/DecoratorPattern/ShapeDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
